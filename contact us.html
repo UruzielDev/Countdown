@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Contact Form</title>
+  
+
+   <script src="jquery-3.6.0.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+   <style>
+   body {
+		  background-image:url(images/space.jpg);
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: cover;
+		}
+   
+   </style>
+   
+   </head>
+	<body>
+   
+   <div class="container">
+	  <div class="row">
+	  <p><br></p>
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΟΝΟΜΑ"></div>
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΕΠΩΝΥΜΟ"></div>
+	<p><br></p>
+</div>
+	
+	  <div class="row">
+	  
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΟΔΟΣ"></div>
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΑΡΙΘΜΟΣ"></div>
+	<p><br></p>
+</div>
+	  <div class="row">
+	  
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΠΟΛΗ"></div>
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΠΕΡΙΟΧΗ"></div>
+	<p><br></p>
+</div>
+
+	 
+
+
+	  <div class="row">
+	  
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΓΕΝΟΣ"></div>
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΧΡΟΝ. ΓΕΝΗΣΗΣ"></div>
+	<p><br></p>
+</div>
+	  <div class="row">
+	  
+  <div class="col-6">
+  <class style="color:white;">
+  <script>
+    function showDiv(obj) {
+    if (obj.checked) {
+        document.getElementById('content').innerHTML = '<input type="text" id="formGroupExampleInput" placeholder="ΑΡΙΘΜΟΣ ΤΕΚΝΩΝ"/>';
+        }
+        else {
+            document.getElementById('content').innerHTML = '';
+        }
+    }
+</script>
+<script>
+ function my_function(val){
+ // val = 'man' val = 'woman'
+ let str = document.getElementById("str");
+ let rls = document.getElementById("rls");
+ 
+ if (val === 'man') {
+	str.style.display='block';
+	rls.style.display='block';
+ 
+ } else {
+	rls.style.display='none';
+	str.style.display='none';
+ }
+ 
+	// psakse to pedio me id str
+ // an einai antras
+	// emfanise to pedio stratio
+	// str.style.display='block';
+	
+  // an einai ginaika
+	// eksafanise to pedio stratiotikes
+	// str.style.display='none';
+    // alert(val);
+ }
+</script>
+  ΕΧΩ ΤΕΚΝΑ<input type="checkbox" onchange="showDiv(this)"/>
+<div id="content">
+
+</div>
+  
+</label></div>
+<div>
+<class style="color:white;">
+<div>
+        <input type="radio" name="size" value="S" id="s" onchange="my_function('man')">
+        <label for="s">ΑΝΔΡΑΣ</label>
+		
+		<input type="radio" name="size" value="S" id="s" onchange="my_function('woman')">
+		<label for="s">ΓΥΝΑΙΚΑ</label>
+		<label>
+		</div>
+
+</div>
+  <div id="str" class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΣΤΡ. ΥΠΟΧΡΕΩΣΕΙΣ"></div>
+	<p><br></p>
+</div>
+	  <div class="row">
+	  
+  <div id="rls" class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΕΤΟΣ ΑΠΟΛΥΣΗΣ ΣΤΡΑΤΟΥ"></div>
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΠΙΣΤΩΤΙΚΕΣ"></div>
+	<p><br></p>
+</div>
+	  <div class="row">
+	  
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΔΑΝΕΙΟ"></div>
+  <div class="col-6"><input type="text" class="form-control" id="formGroupExampleInput" placeholder="ΑΠΟΦΟΙΤΟΣ"></div>
+	<p><br></p>
+</div>
+	<div class="row">
+	  
+  <div class="col-6"></div>
+  <div class="col-6"><button type="submit" class="btn btn-primary">Submit</button></div>
+	<p><br></p>
+
+   
+   
+   
+   
+   	</body>
+</html>
